@@ -1,0 +1,5 @@
+\\psf\Home\Documents\Parallels\repos\aout2\ArtOfUnitTesting2ndEd.Samples\Chapter1\bin\Debug\Chapter1.dll
+\\psf\Home\Documents\Parallels\repos\aout2\ArtOfUnitTesting2ndEd.Samples\Chapter1\bin\Debug\Chapter1.pdb
+\\psf\Home\Documents\Parallels\repos\aout2\ArtOfUnitTesting2ndEd.Samples\Chapter1\obj\Debug\ResolveAssemblyReference.cache
+\\psf\Home\Documents\Parallels\repos\aout2\ArtOfUnitTesting2ndEd.Samples\Chapter1\obj\Debug\Chapter1.dll
+\\psf\Home\Documents\Parallels\repos\aout2\ArtOfUnitTesting2ndEd.Samples\Chapter1\obj\Debug\Chapter1.pdb
