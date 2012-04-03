@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace Chapter1.Console
+namespace Chapter1.ConsoleApp
 {
     class Program
     {
