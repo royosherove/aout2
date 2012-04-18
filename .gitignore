@@ -5,6 +5,7 @@
 #Visual Studio files
 [Oo]bj
 [Bb]in
+*.cache
 *.user
 *.suo
 *.[Cc]ache
