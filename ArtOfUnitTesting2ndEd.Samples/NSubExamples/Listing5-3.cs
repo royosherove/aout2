@@ -32,5 +32,20 @@ namespace NSubExamples
 
            logger.Received().LogError(Arg.Is<string>(s => s.Contains("too short")));
         }
+
+        [Test]
+        public void RecursiveFakes()
+        {
+            IPerson fake = Substitute.For<IPerson>();
+
+            Assert.IsNotNull(fake.GetManager());
+            Assert.IsNotNull(fake.GetManager().GetManager().GetManager());
+        }
+    }
+
+
+    public interface IPerson
+    {
+        IPerson GetManager();
     }
 }
