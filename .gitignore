@@ -10,6 +10,7 @@
 *.suo
 *.[Cc]ache
 *.bak
+*.cache
 *.ncb
 *.log 
 *.DS_Store
