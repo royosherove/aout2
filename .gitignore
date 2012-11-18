@@ -8,6 +8,7 @@
 *.cache
 *.user
 *.suo
+TestResults
 *.[Cc]ache
 *.bak
 *.cache
