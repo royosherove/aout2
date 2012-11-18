@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using Chapter5.LogAn;
+﻿using Chapter5.LogAn;
 using NSubstitute;
 using NUnit.Framework;
 
