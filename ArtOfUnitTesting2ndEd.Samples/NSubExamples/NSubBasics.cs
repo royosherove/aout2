@@ -1,4 +1,5 @@
-﻿using Chapter5.LogAn;
+﻿using System;
+using Chapter5.LogAn;
 using NSubstitute;
 using NUnit.Framework;
 
@@ -16,18 +17,32 @@ namespace NSubExamples
         }
         
         [Test]
-        public void Returns_ByDefault_WorksForHardCodedArgument()
+        public void Returns_ArgAny_IgnoresArgument()
         {
             IFileNameRules fakeRules = Substitute.For<IFileNameRules>();
 
             fakeRules.IsValidLogFileName(Arg.Any<string>()).Returns(true);
-            
+              
             Assert.IsTrue(fakeRules.IsValidLogFileName("anything, really"));
+        }
+        
+        [Test]
+        public void Returns_ArgAny_Throws()
+        {
+            IFileNameRules fakeRules = Substitute.For<IFileNameRules>();
+
+            fakeRules.When(x => x.IsValidLogFileName(Arg.Any<string>()))
+                     .Do(x => { throw new Exception("fake exception"); });
+
+
+            Assert.Throws<Exception>(() =>
+                                     fakeRules.IsValidLogFileName("anything"));
+
         }
         
         
         [Test]
-        public void Returns_ArgAny_IgnoresArgument()
+        public void Returns_ByDefault_WorksForHardCodedArgument()
         {
             IFileNameRules fakeRules = Substitute.For<IFileNameRules>();
 
