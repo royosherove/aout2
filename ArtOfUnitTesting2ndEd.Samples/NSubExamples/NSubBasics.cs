@@ -15,7 +15,6 @@ namespace NSubExamples
 
             Assert.IsFalse(fakeRules.IsValidLogFileName("something.bla"));
         }
-        
         [Test]
         public void Returns_ArgAny_IgnoresArgument()
         {

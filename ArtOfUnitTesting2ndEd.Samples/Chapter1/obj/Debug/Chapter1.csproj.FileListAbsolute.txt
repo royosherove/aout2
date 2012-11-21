@@ -7,3 +7,8 @@ C:\Users\roy.osherove\aout2\ArtOfUnitTesting2ndEd.Samples\Chapter1\bin\Debug\Cha
 C:\Users\roy.osherove\aout2\ArtOfUnitTesting2ndEd.Samples\Chapter1\bin\Debug\Chapter1.pdb
 C:\Users\roy.osherove\aout2\ArtOfUnitTesting2ndEd.Samples\Chapter1\obj\Debug\Chapter1.dll
 C:\Users\roy.osherove\aout2\ArtOfUnitTesting2ndEd.Samples\Chapter1\obj\Debug\Chapter1.pdb
+C:\aout2code\ArtOfUnitTesting2ndEd.Samples\Chapter1\bin\Debug\Chapter1.dll
+C:\aout2code\ArtOfUnitTesting2ndEd.Samples\Chapter1\bin\Debug\Chapter1.pdb
+C:\aout2code\ArtOfUnitTesting2ndEd.Samples\Chapter1\obj\Debug\ResolveAssemblyReference.cache
+C:\aout2code\ArtOfUnitTesting2ndEd.Samples\Chapter1\obj\Debug\Chapter1.dll
+C:\aout2code\ArtOfUnitTesting2ndEd.Samples\Chapter1\obj\Debug\Chapter1.pdb

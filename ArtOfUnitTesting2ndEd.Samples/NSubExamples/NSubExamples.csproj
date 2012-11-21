@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Listing5-5.cs" />
     <Compile Include="Listing5-2.cs" />
     <Compile Include="Listing5-3.cs" />
     <Compile Include="NSubBasics.cs" />
