@@ -80,8 +80,7 @@ namespace NSubExamples
             analyzer.Analyze("Short.txt");
 
             var expected = new ErrorInfo(1000, "fake exception");
-            mockWebService.Received() 
-             .Write(expected);
+            mockWebService.Received().Write(expected);
         }
 
     }
