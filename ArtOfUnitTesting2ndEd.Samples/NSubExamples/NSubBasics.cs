@@ -59,6 +59,15 @@ namespace NSubExamples
             
             Assert.IsTrue(fakeRules.IsValidLogFileName("file.name"));
         }
+        [Test]
+        public void RecursiveFakes_work()
+        {
+            IPerson p = Substitute.For<IPerson>();
+
+            Assert.IsNotNull(p.GetManager());
+            Assert.IsNotNull(p.GetManager().GetManager());
+            Assert.IsNotNull(p.GetManager().GetManager().GetManager());
+        }
 
         public interface IPerson
         {
