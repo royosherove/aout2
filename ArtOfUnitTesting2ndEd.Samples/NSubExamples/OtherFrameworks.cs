@@ -18,8 +18,8 @@ namespace NSubExamples
             Presenter p = new Presenter(stubView.Object, mockLogger.Object);
             stubView.Raise(view => view.ErrorOccured += null, "fake error");
 
-            mockLogger.Verify(logger => logger.LogError(It.Is<string>(s => s.Contains("fake error"
-                ))));
+            mockLogger.Verify(logger => 
+                logger.LogError(It.Is<string>(s => s.Contains("fake error"))));
 
         }
     }
