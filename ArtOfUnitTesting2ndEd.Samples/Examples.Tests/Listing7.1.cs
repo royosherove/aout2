@@ -1,19 +1,19 @@
 ﻿using NSubstitute;
 using NUnit.Framework;
 
-namespace Examples.Tests
+namespace Examples.Tests.Listing71
 {
-     [TestFixture]
-   public class ConfigurationManagerTests
-   {
+    [TestFixture]
+    public class ConfigurationManagerTests
+    {
 
-       [Test]
+        [Test]
         public void Analyze_EmptyFile_ThrowsException()
         {
-           LoggingFacility.Logger = Substitute.For<ILogger>();
-           
-           ConfigurationManager cm = new ConfigurationManager();
-           bool configured = cm.IsConfigured("something");
+            LoggingFacility.Logger = Substitute.For<ILogger>();
+
+            ConfigurationManager cm = new ConfigurationManager();
+            bool configured = cm.IsConfigured("something");
             //rest of test
         }
 
@@ -21,10 +21,10 @@ namespace Examples.Tests
         public void teardown()
         {
             // need to reset a static resource between tests
-           LoggingFacility.Logger = null;
+            LoggingFacility.Logger = null;
         }
 
-         
+
     }
 
 
@@ -32,7 +32,7 @@ namespace Examples.Tests
     public class LogAnalyzerTests
     {
 
-       [Test]
+        [Test]
         public void Analyze_EmptyFile_ThrowsException()
         {
             LoggingFacility.Logger = Substitute.For<ILogger>();
@@ -46,7 +46,7 @@ namespace Examples.Tests
         public void teardown()
         {
             // need to reset a static resource between tests
-           LoggingFacility.Logger = null;
+            LoggingFacility.Logger = null;
         }
     }
 
