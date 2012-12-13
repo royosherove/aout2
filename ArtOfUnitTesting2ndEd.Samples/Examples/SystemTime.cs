@@ -17,7 +17,14 @@ public class SystemTime
         
     }
 
-    public static DateTime Now { get { return _date; }}
+    public static DateTime Now { get
+    {
+        if (_date != DateTime.MinValue)
+        {
+            return _date;
+        }
+        return DateTime.Now;
+    }}
 
 
 }

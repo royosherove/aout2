@@ -19,6 +19,16 @@ namespace Examples.Tests.Listing72
 
             StringAssert.Contains("01.01.2000", output);
         }
+
+
+
+        [TearDown]
+        public void afterEachTest()
+        {
+            SystemTime.Reset();
+        }
+
+
     }
 
 
