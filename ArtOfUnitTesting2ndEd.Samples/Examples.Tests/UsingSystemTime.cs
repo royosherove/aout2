@@ -17,7 +17,7 @@ namespace Examples.Tests.Listing72
 
             string output = TimeLogger.CreateMessage("a");
 
-            StringAssert.Contains("Jan 1, 2000", output);
+            StringAssert.Contains("01.01.2000", output);
         }
     }
 
