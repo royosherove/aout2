@@ -7,67 +7,48 @@ namespace Examples.Tests.Inherited
     public abstract class BaseStringParserTests
     {
         protected abstract IStringParser GetParser(string input);
+        protected abstract string HeaderVersion_SingleDigit { get; }
+        protected abstract string HeaderVersion_WithMinorVersion { get; }
+        protected abstract string HeaderVersion_WithRevision { get; }
+        public const string EXPECTED_SINGLE_DIGIT = "1";
+        public const string EXPECTED_WITH_REVISION = "1.1.1";
+        public const string EXPECTED_WITH_MINORVERSION = "1.1";
+
 
         [Test]
         public void GetStringVersionFromHeader_SingleDigit_Found()
         {
-            string input = "header;version=1;\n";
+            string input = HeaderVersion_SingleDigit;
             IStringParser parser = GetParser(input);
 
             string versionFromHeader = parser.GetTextVersionFromHeader();
-            Assert.AreEqual("1",versionFromHeader);
+            Assert.AreEqual(EXPECTED_SINGLE_DIGIT,versionFromHeader);
         }
+
 
         [Test]
         public void GetStringVersionFromHeader_WithMinorVersion_Found()
         {
-            string input = "header;version=1.1;\n";
+            string input = HeaderVersion_WithMinorVersion;
             IStringParser parser = GetParser(input);
 
             string versionFromHeader = parser.GetTextVersionFromHeader();
-            Assert.AreEqual("1.1",versionFromHeader);
+            Assert.AreEqual(EXPECTED_WITH_MINORVERSION,versionFromHeader);
         }
 
         [Test]
         public void GetStringVersionFromHeader_WithRevision_Found()
         {
-            string input = "header;version=1.1.1;\n";
+            string input = HeaderVersion_WithRevision;
             IStringParser parser = GetParser(input);
 
             string versionFromHeader = parser.GetTextVersionFromHeader();
-            Assert.AreEqual("1.1.1",versionFromHeader);
+            Assert.AreEqual(EXPECTED_WITH_REVISION,versionFromHeader);
         }
 
-        [Test]
-        public void HasCorrectHeader_NoSpaces_ReturnsTrue()
-        {
-            string input = "header;version=1.1.1;\n";
-            IStringParser parser = GetParser(input);
-
-            bool result = parser.HasCorrectHeader();
-            Assert.IsTrue(result);
-        }
-
-        [Test]
-        public void HasCorrectHeader_WithSpaces_ReturnsTrue()
-        {
-            string input = "header ; version=1.1.1 ; \n";
-            IStringParser parser = GetParser(input);
-
-            bool result = parser.HasCorrectHeader();
-            Assert.IsTrue(result);
-        }
-
-        [Test]
-        public void HasCorrectHeader_MissingVersion_ReturnsFalse()
-        {
-            string input = "header; \n";
-            IStringParser parser = GetParser(input);
-
-            bool result = parser.HasCorrectHeader();
-            Assert.IsFalse(result);
-        }
     }
+
+    //An example of the same idea using Generics
     public abstract class StringParserTests<T>
         where T:IStringParser
     {
@@ -89,6 +70,7 @@ namespace Examples.Tests.Inherited
         //more tests
         //...
    }
+    //AN example of a test inheriting from a Generic Base Class
     [TestFixture]
     public class StandardStringParserGenericTests
                         :StringParserTests<StandardStringParser>
