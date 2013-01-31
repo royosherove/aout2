@@ -49,6 +49,7 @@
     <Compile Include="Inherited\BaseStringParserTests.cs" />
     <Compile Include="Inherited\BaseTestClass.cs" />
     <Compile Include="Inherited\StandardStringParserTests.cs" />
+    <Compile Include="TemplateTestClassExample\TemplateStringParserTests.cs" />
     <Compile Include="UsingSystemTime.cs" />
     <Compile Include="Listing7.1.cs" />
     <Compile Include="Listing7.2.cs" />
