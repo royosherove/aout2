@@ -14,7 +14,6 @@ namespace Examples.Tests.Templated
         public abstract void TestGetStringVersionFromHeader_WithRevision_Found();
     }
 
-    [TestFixture]
     public class XmlStringParserTests : TemplateStringParserTests
     {
         protected IStringParser GetParser(string input)
