@@ -4,7 +4,7 @@ using NUnit.Framework;
 namespace Examples.Tests.Inherited
 {
     [TestFixture]
-    public class StandardStringParserTests : BaseStringParserTests
+    public class StandardStringParserTests : FillInTheBlanksStringParserTests
     {
         protected override string HeaderVersion_SingleDigit
         {get { return string.Format("header\tversion={0}\t\n", EXPECTED_SINGLE_DIGIT); }}
@@ -22,7 +22,7 @@ namespace Examples.Tests.Inherited
     }
     
     [TestFixture]
-    public class XMLStringParserTests: BaseStringParserTests
+    public class XMLStringParserTests: FillInTheBlanksStringParserTests
     {
         protected override string HeaderVersion_SingleDigit
         { get { return string.Format("<Header><Version>{0}<Version></Header>", EXPECTED_SINGLE_DIGIT); }}
@@ -39,7 +39,7 @@ namespace Examples.Tests.Inherited
         }
     }
     [TestFixture]
-    public class IISLogParserTests: BaseStringParserTests
+    public class IISLogParserTests: FillInTheBlanksStringParserTests
     {
         protected override IStringParser GetParser(string input)
         {

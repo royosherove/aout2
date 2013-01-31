@@ -4,7 +4,7 @@ using NUnit.Framework;
 
 namespace Examples.Tests.Inherited
 {
-    public abstract class BaseStringParserTests
+    public abstract class FillInTheBlanksStringParserTests
     {
         protected abstract IStringParser GetParser(string input);
         protected abstract string HeaderVersion_SingleDigit { get; }
