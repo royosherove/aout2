@@ -28,13 +28,13 @@ namespace AOUT.CH6.LogAN
 
         public override bool HasCorrectHeader()
         {
-            //use the logic that parses the XML Header
+            //missing here: logic that parses xml
             return false;
         }
 
         public override string GetTextVersionFromHeader()
         {
-            //Use logic to get version from XML Header
+            //missing here: logic that parses xml
             return String.Empty;
         }
     }
@@ -46,13 +46,13 @@ namespace AOUT.CH6.LogAN
 
         public override bool HasCorrectHeader()
         {
-            //use the logic that parses the XML Header
+            //missing here: real implementation
             return false;
         }
 
         public override string GetTextVersionFromHeader()
         {
-            //Use logic to get version from XML Header
+            //missing here: real implementation
             return "";
         }
     }
@@ -63,13 +63,13 @@ namespace AOUT.CH6.LogAN
 
         public override bool HasCorrectHeader()
         {
-            //use the logic that parses the XML Header
+            //missing here: real implementation
             return false;
         }
 
         public override string GetTextVersionFromHeader()
         {
-            //Use logic to get version from XML Header
+            //missing here: real implementation
             return "";
         }
     }
