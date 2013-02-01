@@ -16,7 +16,7 @@ namespace Examples.Tests.Inherited
 
 
         [Test]
-        public void GetStringVersionFromHeader_SingleDigit_Found()
+        public void TestGetStringVersionFromHeader_SingleDigit_Found()
         {
             string input = HeaderVersion_SingleDigit;
             IStringParser parser = GetParser(input);
@@ -27,7 +27,7 @@ namespace Examples.Tests.Inherited
 
 
         [Test]
-        public void GetStringVersionFromHeader_WithMinorVersion_Found()
+        public void TestGetStringVersionFromHeader_WithMinorVersion_Found()
         {
             string input = HeaderVersion_WithMinorVersion;
             IStringParser parser = GetParser(input);
@@ -37,7 +37,7 @@ namespace Examples.Tests.Inherited
         }
 
         [Test]
-        public void GetStringVersionFromHeader_WithRevision_Found()
+        public void TestGetStringVersionFromHeader_WithRevision_Found()
         {
             string input = HeaderVersion_WithRevision;
             IStringParser parser = GetParser(input);
@@ -49,9 +49,11 @@ namespace Examples.Tests.Inherited
     }
 
     //An example of the same idea using Generics
-    public abstract class StringParserTests<T>
+    public abstract class GenericParserTests<T>
         where T:IStringParser
     {
+        protected abstract string GetInputHeaderSingleDigit();
+
         protected T GetParser(string input)
         {
             return (T) Activator.CreateInstance(typeof (T), input);
@@ -60,19 +62,25 @@ namespace Examples.Tests.Inherited
         [Test]
         public void GetStringVersionFromHeader_SingleDigit_Found()
         {
-            string input = "header; \n";
+            string input = GetInputHeaderSingleDigit();
             T parser = GetParser(input);
 
             bool result = parser.HasCorrectHeader();
             Assert.IsFalse(result);
         }
 
+
         //more tests
         //...
    }
     //AN example of a test inheriting from a Generic Base Class
     [TestFixture]
-    public class StandardStringParserGenericTests
-                        :StringParserTests<StandardStringParser>
-    {}
+    public class StandardParserGenericTests
+                        :GenericParserTests<StandardStringParser>
+    {
+        protected override string GetInputHeaderSingleDigit()
+        {
+            return "Header;1";
+        }
+    }
 }

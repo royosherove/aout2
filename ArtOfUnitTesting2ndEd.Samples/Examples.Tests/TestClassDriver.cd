@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" GroupingSetting="Access">
+  <Class Name="Examples.Tests.Inherited.StandardStringParserTests">
+    <Position X="5.75" Y="6.25" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIIAAAAAAAAAAAAgAAAAAAAQAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Inherited\StandardStringParserTests.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Examples.Tests.Inherited.XMLStringParserTests">
+    <Position X="8.5" Y="6.25" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIIAAAAAAAAAAAAgAAAAAAAQAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Inherited\StandardStringParserTests.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Examples.Tests.Inherited.IISLogParserTests">
+    <Position X="11.25" Y="6.25" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIIAAAgAAAAAAAAgAAAAAAAQAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Inherited\StandardStringParserTests.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Examples.Tests.Inherited.FillInTheBlanksStringParserTests">
+    <Position X="8.25" Y="2.5" Width="3.75" />
+    <TypeIdentifier>
+      <HashCode>QAAAQJIAAAAIAAAAAAAgBAAAAAQQAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Inherited\FillInTheBlanksStringParserTests.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
