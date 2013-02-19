@@ -64,7 +64,7 @@ namespace LogAn.UnitTests
         [Test]
         [ExpectedException(typeof(ArgumentException),
               ExpectedMessage = "filename has to be provided")]
-        public void IsValidFileName_EmptyFileName_ThrowsException()
+        public void IsValidLogFileName_EmptyFileName_ThrowsException()
         {
             LogAnalyzer la = MakeAnalyzer();
             la.IsValidLogFileName(string.Empty);
@@ -76,7 +76,7 @@ namespace LogAn.UnitTests
         }
 
         [Test]
-        public void IsValidFileName_EmptyFileName_Throws()
+        public void IsValidLogFileName_EmptyFileName_Throws()
         {
             LogAnalyzer la = MakeAnalyzer();
 
@@ -86,7 +86,7 @@ namespace LogAn.UnitTests
         }
         
         [Test]
-        public void IsValidFileName_EmptyFileName_ThrowsFluent()
+        public void IsValidLogFileName_EmptyFileName_ThrowsFluent()
         {
             LogAnalyzer la = MakeAnalyzer();
 
@@ -96,7 +96,7 @@ namespace LogAn.UnitTests
         }
         
         [Test]
-        public void IsValidFileName_WhenCalled_ChangesWasLastFileNameValid()
+        public void IsValidLogFileName_WhenCalled_ChangesWasLastFileNameValid()
         {
             LogAnalyzer la = MakeAnalyzer();
 
@@ -108,7 +108,7 @@ namespace LogAn.UnitTests
         //refactored from above
         [TestCase("badfile.foo", false)]
         [TestCase("goodfile.slf", true)]
-        public void IsValidFileName_WhenCalled_ChangesWasLastFileNameValid(string file, bool expected)
+        public void IsValidLogFileName_WhenCalled_ChangesWasLastFileNameValid(string file, bool expected)
         {
             LogAnalyzer la = MakeAnalyzer();
 
