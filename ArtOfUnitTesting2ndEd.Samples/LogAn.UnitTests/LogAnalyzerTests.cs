@@ -14,29 +14,26 @@ namespace LogAn.UnitTests
             bool result = analyzer.IsValidLogFileName("filewithbadextension.foo");
 
             Assert.False(result);
-
         }
+
         [Test]
-        public void IsValidLogFileName_GoodExtensionlowercase_ReturnsTrue()
+        public void IsValidLogFileName_GoodExtensionLowercase_ReturnsTrue()
         {
             LogAnalyzer analyzer = new LogAnalyzer();
 
             bool result = analyzer.IsValidLogFileName("filewithgoodextension.slf");
 
             Assert.True(result);
-
         }
 
-
         [Test]
-        public void IsValidLogFileName_GoodExtensionUpperCase_ReturnsTrue()
+        public void IsValidLogFileName_GoodExtensionUppercase_ReturnsTrue()
         {
             LogAnalyzer analyzer = new LogAnalyzer();
 
             bool result = analyzer.IsValidLogFileName("filewithgoodextension.SLF");
 
             Assert.True(result);
-
         }
 
         // this is a refactoring of the previous two tests
@@ -55,13 +52,13 @@ namespace LogAn.UnitTests
         [TestCase("filewithgoodextension.SLF",true)]
         [TestCase("filewithgoodextension.slf",true)]
         [TestCase("filewithbadextension.foo",false)]
-        public void IsValidLogFileName_VariousExtensions_ChecksThem(string file,bool expected)
+        public void IsValidLogFileName_VariousExtensions_ChecksThem(string file, bool expected)
         {
             LogAnalyzer analyzer = new LogAnalyzer();
 
             bool result = analyzer.IsValidLogFileName(file);
 
-            Assert.AreEqual(expected,result);
+            Assert.AreEqual(expected, result);
         }
 
         [Test]
@@ -85,7 +82,7 @@ namespace LogAn.UnitTests
 
             var ex = Assert.Throws<ArgumentException>(() => la.IsValidLogFileName(""));
             
-            StringAssert.Contains("filename has to be provided",ex.Message);
+            StringAssert.Contains("filename has to be provided", ex.Message);
         }
         
         [Test]
@@ -95,7 +92,7 @@ namespace LogAn.UnitTests
 
             var ex = Assert.Throws<ArgumentException>(() => la.IsValidLogFileName(""));
             
-            Assert.That(ex.Message,Is.StringContaining("filename has to be provided"));
+            Assert.That(ex.Message, Is.StringContaining("filename has to be provided"));
         }
         
         [Test]
