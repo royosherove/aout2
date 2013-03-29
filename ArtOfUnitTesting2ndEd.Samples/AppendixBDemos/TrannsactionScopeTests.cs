@@ -7,6 +7,7 @@ namespace MyProduct.Tests
     [TestFixture]
     public class TrannsactionScopeTests
     {
+
         private TransactionScope trans = null;
         [SetUp]
         public void SetUp()

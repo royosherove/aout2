@@ -13,13 +13,16 @@ namespace MyProduct.Tests
             //CreateDB(); //only use this line to initialize a new project with no DB file.
             InitConnection();
 
+
             UglyHackToOpenConnectionOnlyOnce();
+
 
             //CreateTable(); // only do this once if there is no DB
         }
 
         private void UglyHackToOpenConnectionOnlyOnce()
         {
+
             // ugly Hack for demo purposes. SQLite cannot handle multiple connection close/open in same transactionscope.
             // see http://sqlite.phxsoftware.com/forums/p/2200/8903.aspx
             connection.Open();
@@ -27,11 +30,14 @@ namespace MyProduct.Tests
 
         private void InitConnection()
         {
+
             connection = new SQLiteConnection("Data Source=..\\..\\demo.db;Version=3;");
         }
 
         private static void CreateDB()
         {
+
+
             SQLiteConnection.CreateFile("demo.db");
             Thread.Sleep(1000);
 
