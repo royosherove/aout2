@@ -17,3 +17,7 @@ D:\aout2\ArtOfUnitTesting2ndEd.Samples\Chapter1\bin\Debug\Chapter1.dll
 D:\aout2\ArtOfUnitTesting2ndEd.Samples\Chapter1\bin\Debug\Chapter1.pdb
 D:\aout2\ArtOfUnitTesting2ndEd.Samples\Chapter1\obj\Debug\Chapter1.dll
 D:\aout2\ArtOfUnitTesting2ndEd.Samples\Chapter1\obj\Debug\Chapter1.pdb
+C:\Users\ksdrini\Documents\GitHub\aout2\ArtOfUnitTesting2ndEd.Samples\Chapter1\bin\Debug\Chapter1.dll
+C:\Users\ksdrini\Documents\GitHub\aout2\ArtOfUnitTesting2ndEd.Samples\Chapter1\bin\Debug\Chapter1.pdb
+C:\Users\ksdrini\Documents\GitHub\aout2\ArtOfUnitTesting2ndEd.Samples\Chapter1\obj\Debug\Chapter1.dll
+C:\Users\ksdrini\Documents\GitHub\aout2\ArtOfUnitTesting2ndEd.Samples\Chapter1\obj\Debug\Chapter1.pdb
