@@ -1,0 +1,3 @@
+All code inside the NAssert folder is NUnit code and is covered by the NUnit license http://nunit.org/index.php?p=license&r=2.6
+
+Thanks a bunch to the NUnit team for providing this code!

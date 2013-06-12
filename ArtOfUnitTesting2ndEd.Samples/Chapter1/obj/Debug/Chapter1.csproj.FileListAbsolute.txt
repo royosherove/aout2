@@ -13,3 +13,7 @@ C:\aout2code\ArtOfUnitTesting2ndEd.Samples\Chapter1\obj\Debug\ResolveAssemblyRef
 C:\aout2code\ArtOfUnitTesting2ndEd.Samples\Chapter1\obj\Debug\Chapter1.dll
 C:\aout2code\ArtOfUnitTesting2ndEd.Samples\Chapter1\obj\Debug\Chapter1.pdb
 C:\Users\roy.osherove\aout2\ArtOfUnitTesting2ndEd.Samples\Chapter1\obj\Debug\Chapter1.csprojResolveAssemblyReference.cache
+D:\aout2\ArtOfUnitTesting2ndEd.Samples\Chapter1\bin\Debug\Chapter1.dll
+D:\aout2\ArtOfUnitTesting2ndEd.Samples\Chapter1\bin\Debug\Chapter1.pdb
+D:\aout2\ArtOfUnitTesting2ndEd.Samples\Chapter1\obj\Debug\Chapter1.dll
+D:\aout2\ArtOfUnitTesting2ndEd.Samples\Chapter1\obj\Debug\Chapter1.pdb
