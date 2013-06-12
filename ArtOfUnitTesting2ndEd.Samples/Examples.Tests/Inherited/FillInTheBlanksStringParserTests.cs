@@ -21,7 +21,7 @@ namespace Examples.Tests.Inherited
             string input = HeaderVersion_SingleDigit;
             IStringParser parser = GetParser(input);
 
-            string versionFromHeader = parser.GetTextVersionFromHeader();
+            string versionFromHeader = parser.GetStringVersionFromHeader();
             Assert.AreEqual(EXPECTED_SINGLE_DIGIT,versionFromHeader);
         }
 
@@ -32,7 +32,7 @@ namespace Examples.Tests.Inherited
             string input = HeaderVersion_WithMinorVersion;
             IStringParser parser = GetParser(input);
 
-            string versionFromHeader = parser.GetTextVersionFromHeader();
+            string versionFromHeader = parser.GetStringVersionFromHeader();
             Assert.AreEqual(EXPECTED_WITH_MINORVERSION,versionFromHeader);
         }
 
@@ -42,7 +42,7 @@ namespace Examples.Tests.Inherited
             string input = HeaderVersion_WithRevision;
             IStringParser parser = GetParser(input);
 
-            string versionFromHeader = parser.GetTextVersionFromHeader();
+            string versionFromHeader = parser.GetStringVersionFromHeader();
             Assert.AreEqual(EXPECTED_WITH_REVISION,versionFromHeader);
         }
 

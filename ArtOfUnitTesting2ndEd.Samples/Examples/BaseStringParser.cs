@@ -17,7 +17,7 @@ namespace AOUT.CH6.LogAN
         }
 
         public abstract bool HasCorrectHeader();
-        public abstract string GetTextVersionFromHeader();
+        public abstract string GetStringVersionFromHeader();
     }
 
 
@@ -32,7 +32,7 @@ namespace AOUT.CH6.LogAN
             return false;
         }
 
-        public override string GetTextVersionFromHeader()
+        public override string GetStringVersionFromHeader()
         {
             //missing here: logic that parses xml
             return String.Empty;
@@ -50,7 +50,7 @@ namespace AOUT.CH6.LogAN
             return false;
         }
 
-        public override string GetTextVersionFromHeader()
+        public override string GetStringVersionFromHeader()
         {
             //missing here: real implementation
             return "";
@@ -67,7 +67,7 @@ namespace AOUT.CH6.LogAN
             return false;
         }
 
-        public override string GetTextVersionFromHeader()
+        public override string GetStringVersionFromHeader()
         {
             //missing here: real implementation
             return "";

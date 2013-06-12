@@ -5,6 +5,6 @@ namespace AOUT.CH6.LogAN
         string StringToParse { get; }
 
         bool HasCorrectHeader();
-        string GetTextVersionFromHeader();
+        string GetStringVersionFromHeader();
     }
 }

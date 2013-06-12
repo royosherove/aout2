@@ -26,7 +26,7 @@ namespace Examples.Tests.Templated
         {
             IStringParser parser = GetParser("<Header>1</Header>");
 
-            string versionFromHeader = parser.GetTextVersionFromHeader();
+            string versionFromHeader = parser.GetStringVersionFromHeader();
             Assert.AreEqual("1",versionFromHeader);
         }
 
@@ -35,7 +35,7 @@ namespace Examples.Tests.Templated
         {
             IStringParser parser = GetParser("<Header>1.1</Header>");
 
-            string versionFromHeader = parser.GetTextVersionFromHeader();
+            string versionFromHeader = parser.GetStringVersionFromHeader();
             Assert.AreEqual("1.1",versionFromHeader);
         }
 
@@ -44,7 +44,7 @@ namespace Examples.Tests.Templated
         {
             IStringParser parser = GetParser("<Header>1.1.1</Header>");
 
-            string versionFromHeader = parser.GetTextVersionFromHeader();
+            string versionFromHeader = parser.GetStringVersionFromHeader();
             Assert.AreEqual("1.1.1",versionFromHeader);
         }
     }
@@ -60,7 +60,7 @@ namespace Examples.Tests.Templated
         {
             IStringParser parser = GetParser("1");
 
-            string versionFromHeader = parser.GetTextVersionFromHeader();
+            string versionFromHeader = parser.GetStringVersionFromHeader();
             Assert.AreEqual("1",versionFromHeader);
         }
 
@@ -69,7 +69,7 @@ namespace Examples.Tests.Templated
         {
             IStringParser parser = GetParser("1.1");
 
-            string versionFromHeader = parser.GetTextVersionFromHeader();
+            string versionFromHeader = parser.GetStringVersionFromHeader();
             Assert.AreEqual("1.1",versionFromHeader);
         }
 
@@ -78,7 +78,7 @@ namespace Examples.Tests.Templated
         {
             IStringParser parser = GetParser("1.1.1");
 
-            string versionFromHeader = parser.GetTextVersionFromHeader();
+            string versionFromHeader = parser.GetStringVersionFromHeader();
             Assert.AreEqual("1.1.1",versionFromHeader);
         }
     }
