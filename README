@@ -1,5 +1,7 @@
-Welcome to the code samples for "The Art Of Unit Testing - Second Edition"
+Welcome to the .NET code samples for "The Art Of Unit Testing - Second Edition"
 By Roy Osherove
+
+
 Lots of videos and the book itself can be found at
 http://ArtOfUnitTesting.com
 
@@ -7,3 +9,5 @@ or at
 
 http://manning.com/osherove2
  
+You can also find a NodeJS version of these samples, courtesy of @DevCorpio 
+at https://github.com/devcorpio/the-art-of-unit-testing
